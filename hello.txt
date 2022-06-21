@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 hello,world!222
 procedure library test
 master test
 hot-fix
 lhc
+=======
+export主要用于对外输出本模块变量的接口，
+一个文件就可以被理解为一个模块。export就是导出。
+import就是在一个模块中加载另一个含有export接口的模块， import就是导入。
+
+export default和export都能导出一个模块里面的常量，函数，文件，模块等，
+在其它文件或模块中通过import来导入常量，函数，文件或模块。
+这样就可以使用它们了。
+但是，在一个文件或模块中，export,import可以有多个，export default却只能有一个。
+
+通过export方式导出，在导入的时候需要加{}大括号，export default 就不需要{}.
+>>>>>>> f9fa57b023d3d047c0a71694382ed9ba602c438c
