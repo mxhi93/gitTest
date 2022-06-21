@@ -1,18 +1,10 @@
-<<<<<< HEAD
-1.	JDK 和 JRE 有什么区别？
-答：
-• JDK：Java Development Kit 的简称，Java 开发工具包，提供了 Java 的开发环境和运行环境。
-• JRE：Java Runtime Environment 的简称，Java 运行环境，为 Java 的运行提供了所需环境。
-具体来说 JDK 其实包含了 JRE，还包含了编译 Java 源码的编译器 Javac，还包含了很多 Java 程序调试和分析的工具。
-简单来说：如果你需要运行 Java 程序，只需安装 JRE 就可以了，如果你需要编写 Java 程序，需要安装 JDK。
+export主要用于对外输出本模块变量的接口，
+一个文件就可以被理解为一个模块。export就是导出。
+import就是在一个模块中加载另一个含有export接口的模块， import就是导入。
 
-=======
-procedure library test
-master test
-hot-fix
-lhc=======
-世界第一帅----到此一游
-襄阳周杰伦----到此一游
-真是麻雀吃蟋蟀----雀食蟀
-哈哈哈哈
->>>>>>> 3a49c48101c5781e92db328466622d4502993f93
+export default和export都能导出一个模块里面的常量，函数，文件，模块等，
+在其它文件或模块中通过import来导入常量，函数，文件或模块。
+这样就可以使用它们了。
+但是，在一个文件或模块中，export,import可以有多个，export default却只能有一个。
+
+通过export方式导出，在导入的时候需要加{}大括号，export default 就不需要{}.
